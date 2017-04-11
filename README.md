@@ -3,7 +3,7 @@ Server
 
 # Usage
 
-You need [node.js] installed globally:
+You need [node.js] installed globally
 
 ## Run
 
