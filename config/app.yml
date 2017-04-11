@@ -1,0 +1,7 @@
+default:
+
+  #
+  # Basic
+  #
+  server:
+    port: 5555
