@@ -5,8 +5,18 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "npm test"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZiiSolutions/Barber-Server.git"
+  },
+  "author": "Zohair Raza <zohair.raza.@hotmail.co.uk> (https://github.com/ZiiSolutions)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZiiSolutions/Barber-Server/issues"
+  },
+  "homepage": "https://github.com/ZiiSolutions/Barber-Server#readme",
   "dependencies": {
     "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
@@ -15,5 +25,18 @@
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.2",
     "konfig": "0.2.1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0",
+    "istanbul": "1.1.0-alpha.1",
+    "mocha": "3.1.2",
+    "mocha-bamboo-reporter": "*",
+    "mocha-junit-reporter": "1.13.0",
+    "sinon": "1.17.6",
+    "sinon-as-promised": "4.0.2",
+    "sinon-chai": "2.8.0",
+    "supertest": "2.0.1",
+    "es6-plato": "1.0.14"
   }
 }
