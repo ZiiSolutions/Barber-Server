@@ -13,7 +13,7 @@ router.get('/', function (req, res, next) {
         queue: queue
     };
 
-    res.send(JSON.stringify(json));
+    req.send(JSON.stringify(json));
 });
 
 module.exports = router;
