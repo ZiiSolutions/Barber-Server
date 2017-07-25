@@ -6,9 +6,9 @@ const HTTP_SUCESS_STATUS_CODE = 200;
 
 /* Update queue. */
 router.post('/', function (req, res, next) {
-    console.info("{post: recieved and queue updated}");
+    console.info("{post: recieved and queue updated " + req.body.queue + "}");
     queuemanagementService.setQueue(req.body.queue);
-    req.sendStatus(HTTP_SUCESS_STATUS_CODE);
+    res.sendStatus(HTTP_SUCESS_STATUS_CODE);
     //TODO make sure to handle error and send back any that need to be sent back to client
 });
 
