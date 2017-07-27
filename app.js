@@ -41,7 +41,7 @@ var server = http.createServer(app);
  */
 
 server.listen(port, () => {
-    console.info('{barberServerNode: {msg: Server initialised}}');
+    console.info('{barberServerNode: {msg: Server initialised on port ' + port +'}}');
 });
 
 server.on('error', onError);
